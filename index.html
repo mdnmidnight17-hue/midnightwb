@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio — MidNight</title>
+  <meta name="description"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="brand" href="#home" aria-label="Ke bagian atas">Mid<span>Night</span></a>
+      <nav class="nav">
+        <a href="#home">About</a>
+        <a href="#skills">Skill</a>
+        <a href="#projects">Project</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home" class="hero">
+    <div class="container hero-grid">
+      <figure class="hero-card" aria-label="Foto profil">
+        <img src="/image/Furina.jpg"
+             alt="My profil" loading="lazy" />
+      </figure>
+
+      <section class="hero-text">
+        <p class="eyebrow">Hi, I am</p>
+        <h1>MidNight</h1>
+        <p class="lead">
+          or you can call me shin. This is just a place where I share my skills and fun projects I’ve built 
+          for learning and experimenting. Nothing too formal—just for fun and enjoy.
+        </p>
+        <div class="cta">
+          <a href="#projects" class="btn btn-primary">See Project</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <section id="skills" class="section alt">
+    <div class="container highlight">
+      <h2>Skills</h2>
+      <div class="chips">
+        <div class="card">
+            <div class="wrapper">
+                <img src="/image/BackG.jpg" class="cover-image">
+                <img src="/image/BackG2.jpg" class="cover-image2">
+            </div>
+            <img src="/image/phtoshop.png" class="character">
+            <p class="title">Photoshop</p>
+        </div>
+        <div class="card">
+            <div class="wrapper">
+                <img src="/image/BackG.jpg" class="cover-image">
+                <img src="/image/BackG2.jpg" class="cover-image2">
+            </div>
+            <img src="/image/affter_effect.png" class="character">
+            <p class="title long">After Effect</p>
+        </div>
+        <div class="card">
+            <div class="wrapper">
+                <img src="/image/BackG.jpg" class="cover-image">
+                <img src="/image/BackG2.jpg" class="cover-image2">
+            </div>
+            <img src="/image/Group 2.png" class="character">
+            <p class="title">Python</p>
+        </div>
+        <div class="card">
+            <div class="wrapper">
+                <img src="/image/BackG.jpg" class="cover-image">
+                <img src="/image/BackG2.jpg" class="cover-image2">
+            </div>
+            <img src="/image/php.png" class="character">
+            <p class="title">php</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+
+      <div class="projects">
+        <article class="project-card">
+            <video muted loop preload="metadata">
+              <source src="video/Live2D Furina.mp4" type="video/mp4">
+              Your browser not support video.
+            </video>
+          <div class="project-body">
+            <h3>Live 2D — Hover For Animation</h3>
+            <p>
+              Creating animations 2D Furina from genshin impact with after effect.
+            </p>
+            <div class="tags">
+              <span>Photoshop</span><span>Affter effect</span>
+            </div>
+            <div class="actions">
+              <a href="https://www.hoyolab.com/article/37391911" target="_blank" rel="noopener noreferrer" 
+              class="btn btn-primary btn-project">Source Image</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+            <video muted loop preload="metadata">
+              <source src="video/Live2D Phrolova.mp4" type="video/mp4">
+              Your browser not support video.
+            </video>
+          <div class="project-body">
+            <h3>Live 2D — Hover For Animation</h3>
+            <p>
+              Creating animations 2D Phrolova from wuthering waves with after effect.
+            </p>
+            <div class="tags">
+              <span>Photoshop</span><span>Affter effect</span>
+            </div>
+            <div class="actions">
+              <a href="https://www.instagram.com/share/p/BAN7tIuiUF" target="_blank" rel="noopener noreferrer" 
+              class="btn btn-primary btn-project">Source Image</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="image/image.png" loading="lazy" />
+          <div class="project-body">
+            <h3>Python — Simple Calc </h3>
+            <p>
+              Using python create a simple calculator in 1 line.
+            </p>
+            <div class="tags">
+              <span>Python</span>
+            </div>
+            <div class="actions">
+              <a href="/source/simple_math.py" target="_blank" rel="noopener noreferrer" 
+              class="btn btn-primary btn-project">Source Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Disclaimer — This web is just for fun and entertainment. No profit-making, no copyright claims.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll(".project-card").forEach(card => {
+      const vid = card.querySelector("video");
+
+      if (vid) {
+        vid.pause();
+        card.addEventListener("mouseenter", () => vid.play());
+        card.addEventListener("mouseleave", () => vid.pause());
+      }
+    });
+
+  </script>
+</body>
+</html>
