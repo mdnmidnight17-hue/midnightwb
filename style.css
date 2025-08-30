@@ -322,6 +322,7 @@ a:hover{ text-decoration: underline; }
   .hero-grid{ grid-template-columns: 1fr; }
   .two-col{ grid-template-columns: 1fr; }
   .card{ width: 150px; height: 150px;}
+  .card .character{ transform: translateX(-50%) translateY(0);}
   .card:hover .character{transform: translateX(-50%) translateY(-20px);}
   .card:hover .title{transform: translateX(-50%) translateY(-60px); font-size: 30px;}
   .card:hover .title.long{transform: translateX(-50%) translateY(-60px); font-size: 25px;}
