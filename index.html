@@ -6,6 +6,7 @@
   <title>MidNight</title>
   <meta name="description"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -20,7 +21,7 @@
     </div>
   </header>
 
-  <main id="home" class="hero">
+  <main id="home" class="hero" data-aos="fade-up">
     <div class="container hero-grid">
       <figure class="hero-card" aria-label="Foto profil">
         <img src="image/Furina.jpg"
@@ -41,11 +42,12 @@
     </div>
   </main>
 
-  <section id="skills" class="section alt">
+  <section id="skills" class="section alt" data-aos="fade-up">
     <div class="container highlight">
       <h2>Skills</h2>
+      <a href="skill.html" class="btn btn-ghost btn-skill">View all <i class="fa-solid fa-arrow-right"></i></a>
       <div class="chips">
-        <div class="card">
+        <div class="card fade-delay">
             <div class="wrapper">
                 <img src="image/BackG.jpg" class="cover-image">
                 <img src="image/BackG2.jpg" class="cover-image2">
@@ -53,7 +55,7 @@
             <img src="image/phtoshop.png" class="character">
             <p class="title">Photoshop</p>
         </div>
-        <div class="card">
+        <div class="card fade-delay">
             <div class="wrapper">
                 <img src="image/BackG.jpg" class="cover-image">
                 <img src="image/BackG2.jpg" class="cover-image2">
@@ -61,7 +63,7 @@
             <img src="image/affter_effect.png" class="character">
             <p class="title long">After Effect</p>
         </div>
-        <div class="card">
+        <div class="card fade-delay">
             <div class="wrapper">
                 <img src="image/BackG.jpg" class="cover-image">
                 <img src="image/BackG2.jpg" class="cover-image2">
@@ -69,7 +71,7 @@
             <img src="image/python.png" class="character">
             <p class="title">Python</p>
         </div>
-        <div class="card">
+        <div class="card fade-delay">
             <div class="wrapper">
                 <img src="image/BackG.jpg" class="cover-image">
                 <img src="image/BackG2.jpg" class="cover-image2">
@@ -86,62 +88,67 @@
       <h2>Projects</h2>
 
       <div class="projects">
-        <article class="project-card">
-            <video muted loop preload="metadata">
-              <source src="video/Live2D Furina.mp4" type="video/mp4">
-              Your browser not support video.
-            </video>
-          <div class="project-body">
-            <h3>Live 2D — Hover For Animation</h3>
-            <p>
-              Creating animations 2D Furina from genshin impact with after effect.
-            </p>
-            <div class="tags">
-              <span>Photoshop</span><span>Affter effect</span>
+        <div class="p-card fade-delay-project">
+          <article class="project-card">
+              <video muted loop preload="metadata">
+                <source src="video/Live2D Furina.mp4" type="video/mp4">
+                Your browser not support video.
+              </video>
+            <div class="project-body">
+              <h3>Live 2D — Hover For Animation</h3>
+              <p>
+                Creating animations 2D Furina from genshin impact with after effect.
+              </p>
+              <div class="tags">
+                <span>Photoshop</span><span>Affter effect</span>
+              </div>
+              <div class="actions">
+                <a href="https://www.hoyolab.com/article/37391911" target="_blank" rel="noopener noreferrer" 
+                class="btn btn-primary btn-project">Source Image</a>
+              </div>
             </div>
-            <div class="actions">
-              <a href="https://www.hoyolab.com/article/37391911" target="_blank" rel="noopener noreferrer" 
-              class="btn btn-primary btn-project">Source Image</a>
+          </article>
+        </div>
+        <div class="p-card fade-delay-project">
+          <article class="project-card">
+              <video muted loop preload="metadata">
+                <source src="video/Live2D Phrolova.mp4" type="video/mp4">
+                Your browser not support video.
+              </video>
+            <div class="project-body">
+              <h3>Live 2D — Hover For Animation</h3>
+              <p>
+                Creating animations 2D Phrolova from wuthering waves with after effect.
+              </p>
+              <div class="tags">
+                <span>Photoshop</span><span>After effect</span>
+              </div>
+              <div class="actions">
+                <a href="https://www.instagram.com/share/p/BAN7tIuiUF" target="_blank" rel="noopener noreferrer" 
+                class="btn btn-primary btn-project">Source Image</a>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
+        </div>
 
-        <article class="project-card">
-            <video muted loop preload="metadata">
-              <source src="video/Live2D Phrolova.mp4" type="video/mp4">
-              Your browser not support video.
-            </video>
-          <div class="project-body">
-            <h3>Live 2D — Hover For Animation</h3>
-            <p>
-              Creating animations 2D Phrolova from wuthering waves with after effect.
-            </p>
-            <div class="tags">
-              <span>Photoshop</span><span>After effect</span>
+        <div class="p-card fade-delay-project">
+          <article class="project-card">
+            <img src="image/image.png" loading="lazy" />
+            <div class="project-body">
+              <h3>Python — Simple Calculator </h3>
+              <p>
+                Using python create a simple calculator in 1 line.
+              </p>
+              <div class="tags">
+                <span>Python</span>
+              </div>
+              <div class="actions">
+                <a href="/source/simple_math.py" target="_blank" rel="noopener noreferrer" 
+                class="btn btn-primary btn-project">Source Code</a>
+              </div>
             </div>
-            <div class="actions">
-              <a href="https://www.instagram.com/share/p/BAN7tIuiUF" target="_blank" rel="noopener noreferrer" 
-              class="btn btn-primary btn-project">Source Image</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <img src="image/image.png" loading="lazy" />
-          <div class="project-body">
-            <h3>Python — Simple Calculator </h3>
-            <p>
-              Using python create a simple calculator in 1 line.
-            </p>
-            <div class="tags">
-              <span>Python</span>
-            </div>
-            <div class="actions">
-              <a href="/source/simple_math.py" target="_blank" rel="noopener noreferrer" 
-              class="btn btn-primary btn-project">Source Code</a>
-            </div>
-          </div>
-        </article>
+          </article>
+        </div>
       </div>
     </div>
   </section>
@@ -151,18 +158,7 @@
       <p>Disclaimer — This web is just for fun and entertainment. No profit-making, no copyright claims.</p>
     </div>
   </footer>
-
-  <script>
-    document.querySelectorAll(".project-card").forEach(card => {
-      const vid = card.querySelector("video");
-
-      if (vid) {
-        vid.pause();
-        card.addEventListener("mouseenter", () => vid.play());
-        card.addEventListener("mouseleave", () => vid.pause());
-      }
-    });
-
-  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
